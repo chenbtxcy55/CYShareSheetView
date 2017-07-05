@@ -15,7 +15,6 @@
 		D11EBEE91F0CD876006E85AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11EBEE71F0CD876006E85AF /* LaunchScreen.storyboard */; };
 		D11EBEF51F0CDD4C006E85AF /* CYShareSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = D11EBEF41F0CDD4C006E85AF /* CYShareSheetView.m */; };
 		D11EBEF81F0CDEB5006E85AF /* UIColor+JCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D11EBEF71F0CDEB5006E85AF /* UIColor+JCKit.m */; };
-		D11EBEFA1F0CFAA8006E85AF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D11EBEF91F0CFAA8006E85AF /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		D11EBEF41F0CDD4C006E85AF /* CYShareSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYShareSheetView.m; sourceTree = "<group>"; };
 		D11EBEF61F0CDEB5006E85AF /* UIColor+JCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JCKit.h"; sourceTree = "<group>"; };
 		D11EBEF71F0CDEB5006E85AF /* UIColor+JCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JCKit.m"; sourceTree = "<group>"; };
-		D11EBEF91F0CFAA8006E85AF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +94,6 @@
 				D11EBEF71F0CDEB5006E85AF /* UIColor+JCKit.m */,
 				D11EBEF31F0CDD4C006E85AF /* CYShareSheetView.h */,
 				D11EBEF41F0CDD4C006E85AF /* CYShareSheetView.m */,
-				D11EBEF91F0CFAA8006E85AF /* Podfile */,
 				D11EBEE51F0CD876006E85AF /* Assets.xcassets */,
 				D11EBEE71F0CD876006E85AF /* LaunchScreen.storyboard */,
 				D11EBEEA1F0CD876006E85AF /* Info.plist */,
@@ -175,7 +172,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D11EBEFA1F0CFAA8006E85AF /* Podfile in Resources */,
 				D11EBEE91F0CD876006E85AF /* LaunchScreen.storyboard in Resources */,
 				D11EBEE61F0CD876006E85AF /* Assets.xcassets in Resources */,
 			);
