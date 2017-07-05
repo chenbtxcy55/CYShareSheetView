@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5728C6961B2A3DA0C44D7435 /* libPods-CYShareSheetView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4894C7071D56F92CD251C6BF /* libPods-CYShareSheetView.a */; };
+		4D3B4D4E8EF095CC22517B1E /* Pods_CYShareSheetView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21C24FD28E186DD8480C154 /* Pods_CYShareSheetView.framework */; };
 		D11EBEDB1F0CD876006E85AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D11EBEDA1F0CD876006E85AF /* main.m */; };
 		D11EBEDE1F0CD876006E85AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D11EBEDD1F0CD876006E85AF /* AppDelegate.m */; };
 		D11EBEE11F0CD876006E85AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D11EBEE01F0CD876006E85AF /* ViewController.m */; };
@@ -19,9 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4894C7071D56F92CD251C6BF /* libPods-CYShareSheetView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYShareSheetView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F52AE0D4F13603868624B13 /* Pods-CYShareSheetView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYShareSheetView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYShareSheetView/Pods-CYShareSheetView.debug.xcconfig"; sourceTree = "<group>"; };
 		78895E00BA8213F90C2BBB88 /* Pods-CYShareSheetView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYShareSheetView.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYShareSheetView/Pods-CYShareSheetView.release.xcconfig"; sourceTree = "<group>"; };
+		C21C24FD28E186DD8480C154 /* Pods_CYShareSheetView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CYShareSheetView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11EBED61F0CD876006E85AF /* CYShareSheetView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYShareSheetView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11EBEDA1F0CD876006E85AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D11EBEDC1F0CD876006E85AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		D11EBEF41F0CDD4C006E85AF /* CYShareSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYShareSheetView.m; sourceTree = "<group>"; };
 		D11EBEF61F0CDEB5006E85AF /* UIColor+JCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JCKit.h"; sourceTree = "<group>"; };
 		D11EBEF71F0CDEB5006E85AF /* UIColor+JCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JCKit.m"; sourceTree = "<group>"; };
-		D11EBEF91F0CFAA8006E85AF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		D11EBEF91F0CFAA8006E85AF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5728C6961B2A3DA0C44D7435 /* libPods-CYShareSheetView.a in Frameworks */,
+				4D3B4D4E8EF095CC22517B1E /* Pods_CYShareSheetView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +53,7 @@
 		6D7574635B989B3A0D2404D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4894C7071D56F92CD251C6BF /* libPods-CYShareSheetView.a */,
+				C21C24FD28E186DD8480C154 /* Pods_CYShareSheetView.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,9 +208,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CYShareSheetView/Pods-CYShareSheetView-resources.sh",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/Sina/SinaSDK/WeiboSDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -223,9 +228,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CYShareSheetView/Pods-CYShareSheetView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
