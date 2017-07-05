@@ -19,18 +19,25 @@
     [super viewDidLoad];
     self.title = @"测试咯";
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *shareBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 50, 25)];
+    [shareBtn setTitle:@"分享" forState:UIControlStateNormal];
+    [shareBtn setTitleColor:[UIColor colorWithRed:0.64 green:0.81 blue:0.26 alpha:1] forState:UIControlStateNormal];
+    [shareBtn setBackgroundColor:[UIColor whiteColor]];
+    [shareBtn addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:shareBtn];
 }
 
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+
+
+- (void)share {
     [self.shareView show];
     
-//    [self.shareSheetView platformClicked:^(int platform) {
-//        
-//        [BLUMSocialManager shareWebPageToPlatformType:platform info:self.shareinfo];
-//    }];
-
-
+    //    [self.shareSheetView platformClicked:^(int platform) {
+    //
+    //        [BLUMSocialManager shareWebPageToPlatformType:platform info:self.shareinfo];
+    //    }];
 }
 
 - (CYShareSheetView *)shareView {
