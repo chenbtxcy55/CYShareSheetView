@@ -58,7 +58,7 @@
 
     // 此处thumbURL 不能为空，为空新浪微博就会报错 应该提供一个固定的缩略图image或url，最好是项目logo
     if (!thumbImage) {
-        thumbImage = [UIImage imageNamed:@"share_default"];
+        thumbImage = [UIImage imageNamed:@"logo"];
     }
     UMShareWebpageObject *shareObject = [UMShareWebpageObject shareObjectWithTitle:title descr:content thumImage:thumbImage];
     //设置网页地址
