@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "CYUMSocialManager.h"
 @interface AppDelegate ()
 
 @end
@@ -32,6 +33,8 @@
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     
+    [CYUMSocialManager configShareSDK];
+
     return YES;
 }
 

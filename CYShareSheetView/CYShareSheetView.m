@@ -7,7 +7,7 @@
 //
 
 #import "CYShareSheetView.h"
-//#import <UMSocialCore/UMSocialCore.h>
+#import <UMSocialCore/UMSocialCore.h>
 #import "UIColor+JCKit.h"
 
 #define CYScreenWidth         ([UIScreen mainScreen].bounds.size.width)
@@ -189,15 +189,13 @@ self.backgroundView.frame = CGRectMake(0, self.bounds.size.height, self.bounds.s
 
 - (int)platformName:(int)index
 {
-
-//    if (index == 0) {
-//        return UMSocialPlatformType_WechatSession;
-//    }else if (index == 1) {
-//        return UMSocialPlatformType_WechatTimeLine;
-//    }else {
-//        return UMSocialPlatformType_Sina;
-//    }
-    return 0;
+    if (index == 0) {
+        return UMSocialPlatformType_WechatSession;
+    }else if (index == 1) {
+        return UMSocialPlatformType_WechatTimeLine;
+    }else {
+        return UMSocialPlatformType_Sina;
+    }
 }
 
 #pragma mark-
