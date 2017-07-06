@@ -48,14 +48,14 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
 
 - (void)share {
     [self.shareView show];
-        [self.shareView platformClicked:^(int platform) {
+    [self.shareView platformClicked:^(int platform) {
             [CYUMSocialManager shareWebPageToPlatformType:platform info:self.shareinfo];
         }];
 }
 
 - (CYShareSheetView *)shareView {
     if (!_shareView) {
-        _shareView = [CYShareSheetView new];
+        _shareView = [[CYShareSheetView alloc] init];
     }
     return _shareView;
 }
