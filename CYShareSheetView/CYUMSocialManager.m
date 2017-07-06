@@ -45,7 +45,7 @@
 
 
 + (void)shareWebPageToPlatformType:(UMSocialPlatformType)platformType info:(NSDictionary *)info {
-    [self shareWebPageToPlatformType:platformType url:info[@"shareurl"] thumbImage:info[@"pic"] title:info[@"title"] content:info[@"subtitle"]];
+    [self shareWebPageToPlatformType:platformType url:info[@"shareurl"] thumbImage:info[@"thumbImage"] title:info[@"title"] content:info[@"subtitle"]];
 }
 
 

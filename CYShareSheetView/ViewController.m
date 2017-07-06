@@ -10,6 +10,10 @@
 #import "CYShareSheetView.h"
 #import "CYUMSocialManager.h"
 
+
+static NSString* const UMS_THUMB_IMAGE = @"https://mobile.umeng.com/images/pic/home/social/img-1.png";
+static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
+
 @interface ViewController ()
 @property (nonatomic, strong) CYShareSheetView *shareView;
 
@@ -38,10 +42,10 @@
     
     //这里就是要分享的各种参数 ,根据你自己的项目自己设定
     NSString *title = @"test1";  //标题
-    NSString *content = @"分析的内容";  //内容
-    UIImage *shareImage = [UIImage imageNamed:@"fenxiangweibo"]; // 缩略图
-    NSString *shareUrl = @"https://www.baidu.com/";  //分享链接
-    NSDictionary *shareinfo = @{@"title":title,@"subtitle":content,@"thumbImage":shareImage,@"shareurl":shareUrl};
+    NSString *content = @"分享的内容";  //内容
+//    UIImage *shareImage = [UIImage imageNamed:@"fenxiangweibo"]; // 缩略图
+    NSString *shareUrl = UMS_WebLink;  //分享链接
+    NSDictionary *shareinfo = @{@"title":title,@"subtitle":content,@"thumbImage":UMS_THUMB_IMAGE,@"shareurl":shareUrl};
     
         [self.shareView platformClicked:^(int platform) {
             [CYUMSocialManager shareWebPageToPlatformType:platform info:shareinfo];
