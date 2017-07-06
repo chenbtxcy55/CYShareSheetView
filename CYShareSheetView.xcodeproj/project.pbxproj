@@ -15,6 +15,7 @@
 		D11EBEE91F0CD876006E85AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11EBEE71F0CD876006E85AF /* LaunchScreen.storyboard */; };
 		D11EBEF51F0CDD4C006E85AF /* CYShareSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = D11EBEF41F0CDD4C006E85AF /* CYShareSheetView.m */; };
 		D11EBEF81F0CDEB5006E85AF /* UIColor+JCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D11EBEF71F0CDEB5006E85AF /* UIColor+JCKit.m */; };
+		D11EBF011F0E0881006E85AF /* CYUMSocialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D11EBF001F0E0881006E85AF /* CYUMSocialManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		D11EBEF41F0CDD4C006E85AF /* CYShareSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYShareSheetView.m; sourceTree = "<group>"; };
 		D11EBEF61F0CDEB5006E85AF /* UIColor+JCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JCKit.h"; sourceTree = "<group>"; };
 		D11EBEF71F0CDEB5006E85AF /* UIColor+JCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JCKit.m"; sourceTree = "<group>"; };
+		D11EBEFF1F0E0881006E85AF /* CYUMSocialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYUMSocialManager.h; sourceTree = "<group>"; };
+		D11EBF001F0E0881006E85AF /* CYUMSocialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYUMSocialManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				D11EBEDF1F0CD876006E85AF /* ViewController.h */,
 				D11EBEE01F0CD876006E85AF /* ViewController.m */,
 				D11EBEF61F0CDEB5006E85AF /* UIColor+JCKit.h */,
+				D11EBEFF1F0E0881006E85AF /* CYUMSocialManager.h */,
+				D11EBF001F0E0881006E85AF /* CYUMSocialManager.m */,
 				D11EBEF71F0CDEB5006E85AF /* UIColor+JCKit.m */,
 				D11EBEF31F0CDD4C006E85AF /* CYShareSheetView.h */,
 				D11EBEF41F0CDD4C006E85AF /* CYShareSheetView.m */,
@@ -253,6 +258,7 @@
 				D11EBEE11F0CD876006E85AF /* ViewController.m in Sources */,
 				D11EBEDE1F0CD876006E85AF /* AppDelegate.m in Sources */,
 				D11EBEF81F0CDEB5006E85AF /* UIColor+JCKit.m in Sources */,
+				D11EBF011F0E0881006E85AF /* CYUMSocialManager.m in Sources */,
 				D11EBEDB1F0CD876006E85AF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
