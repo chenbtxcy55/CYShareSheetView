@@ -158,7 +158,7 @@
     
     [UIView animateWithDuration:0.3 animations:^{
         // 设置整个view弹出来以后的位置（最终位置）
-        self.shadeView.alpha = 0.5f;
+        self.shadeView.alpha = 0.9f;
         self.hidden = NO;
         self.backgroundView.frame = CGRectMake(0, self.bounds.size.height-bgHeight, self.bounds.size.width, bgHeight);
         
@@ -174,7 +174,7 @@
     
     [UIView animateWithDuration:0.3f animations:^{
         //整个View的初始位置，
-        self.shadeView.alpha = 0.1f;
+        self.shadeView.alpha = 0.5f;
 self.backgroundView.frame = CGRectMake(0, self.bounds.size.height, self.bounds.size.width, bgHeight);
     } completion:^(BOOL finished) {
         self.shadeView.alpha = 0.f;
